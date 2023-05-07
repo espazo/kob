@@ -11,10 +11,7 @@ class BackendApplicationTests {
     void contextLoads() {
         BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
 
-        System.out.println(bCryptPasswordEncoder.encode("pb"));
-        System.out.println(bCryptPasswordEncoder.encode("pc"));
-        System.out.println(bCryptPasswordEncoder.encode("pd"));
-        System.out.println(bCryptPasswordEncoder.encode("pe"));
+        System.out.println(bCryptPasswordEncoder.encode("pyxc"));
 
     }
 
