@@ -49,17 +49,31 @@ export default {
         //     },
         // });
 
+        // $.ajax({
+        //     url: "http://localhost:3000/user/bot/update/",
+        //     type: "post",
+        //     headers: {
+        //         Authorization: "Bearer " + store.state.user.token,
+        //     },
+        //     data: {
+        //         bot_id: 1,
+        //         title: "title",
+        //         description: "description",
+        //         content: "content",
+        //     },
+        //     success(resp) {
+        //         console.log(resp);
+        //     },
+        //     error(resp) {
+        //         console.log(resp);
+        //     }
+        // });
+
         $.ajax({
-            url: "http://localhost:3000/user/bot/update/",
+            url: "http://localhost:3000/user/bot/getList/",
             type: "post",
             headers: {
                 Authorization: "Bearer " + store.state.user.token,
-            },
-            data: {
-                bot_id: 1,
-                title: "title",
-                description: "description",
-                content: "content",
             },
             success(resp) {
                 console.log(resp);
